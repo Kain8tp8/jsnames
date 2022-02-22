@@ -28,6 +28,10 @@ for (let i = 0; i < 10; i++) {
     li.classList.add('list-group-item')
     li.innerText = names[i]
     urel.appendChild (li)
+    
+    li.onclick = () => {
+        li.remove()
+    }
 }
                     
 btn.onclick = () => {
